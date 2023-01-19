@@ -31,11 +31,3 @@ const romanToInteger = (romanInput) => {
 
   return integer;
 };
-
-/**
- * Print the  results
- */
-console.log(romanToInteger('CMCM')); // 1800
-console.log(romanToInteger('III')); // 3
-console.log(romanToInteger('LVIII')); // 58
-console.log(romanToInteger('MCMXCIV')); // 1994
