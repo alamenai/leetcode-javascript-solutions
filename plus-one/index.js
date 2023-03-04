@@ -53,7 +53,14 @@ var plusOne = function (digits) {
 	return digits;
 };
 
+const plusOneAlt = (digits) => {
+	return (BigInt(digits.join('')) + 1n).toString().split('');
+};
+
 console.log(plusOne([9, 9]));
 console.log(plusOne([1, 9, 9]));
 console.log(plusOne([1, 2, 3]));
 console.log(plusOne([1, 9, 9]));
+
+console.log(plusOneAlt([9, 1]));
+console.log(plusOneAlt([9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9]));
