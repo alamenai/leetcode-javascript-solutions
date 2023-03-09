@@ -30,19 +30,25 @@ Each element in the array appears twice except for one element which appears onl
  * @param {number[]} nums
  * @return {number}
  */
+
+// var singleNumber = function (nums) {
+// 	// Create a map to store the number and its occurrences { number : count}
+// 	const map = new Map();
+// 	let count = 1;
+// 	for (let i = 0; i < nums.length; i++) {
+// 		map.has(nums[i]) ? count++ : (count = 1);
+// 		map.set(nums[i], count);
+// 	}
+
+// 	// Get the key that has value equals to 1
+// 	for (let [key, value] of map) {
+// 		if (value === 1) return key;
+// 	}
+// };
+
 var singleNumber = function (nums) {
 	// Create a map to store the number and its occurrences { number : count}
-	const map = new Map();
-	let count = 1;
-	for (let i = 0; i < nums.length; i++) {
-		map.has(nums[i]) ? count++ : (count = 1);
-		map.set(nums[i], count);
-	}
-
-    // Get the key that has value equals to 1
-	for (let [key, value] of map) {
-		if (value === 1) return key;
-	}
+	return nums.filter((n, i, arr) => arr.indexOf(n) === arr.lastIndexOf(n));
 };
 
 console.log(singleNumber([4, 1, 2, 1, 2]));
