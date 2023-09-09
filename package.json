@@ -1,0 +1,33 @@
+{
+  "name": "leet-code-problems",
+  "version": "1.0.0",
+  "description": "Leetcode solutions with TypeScript by Ala Eddine Menai",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MenaiAla/leetcode-javascript-solutions.git"
+  },
+  "keywords": [
+    "leetcode",
+    "leetcode-interview",
+    "leetcode-javascript"
+  ],
+  "author": "Ala Eddine Menai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MenaiAla/leetcode-javascript-solutions/issues"
+  },
+  "homepage": "https://github.com/MenaiAla/leetcode-javascript-solutions#readme",
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}

@@ -34,8 +34,12 @@ s consists of parentheses only '()[]{}'.
  * @return {boolean}
  */
 var isValid = (s) => {
-	console.log(num);
-	 num = 10;
+	while (s.includes('{}') || s.includes('()') || s.includes('[]')) {
+		s = s.replace('{}', '');
+		s = s.replace('()', '');
+		s = s.replace('[]', '');
+	}
+	return s.length === 0;
 };
 
 console.log(isValid('()'));
